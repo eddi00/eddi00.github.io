@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/utilities";
+
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+// $theme-colors: (
+//   "info": tomato,
+//   "danger": teal,
+// );
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "viewport-height": (
+      property: height,
+      class: vh,
+      values: (
+        100: 100vh,
+        90: 90vh,
+        80: 80vh,
+      ),
+    ),
+  )
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
