@@ -89,47 +89,68 @@ export default function Home() {
         </Container> */}
 
         <Container className="min-vh-100" id="projects">
-          <Row className="text-center">
+          <Row className="text-center mb-5">
             <h2 className="mb-2 mt-5">{t("projects-title")}</h2>
             {/* <h6 className="c-grey-300">{t("projects-subtitle")}</h6> */}
           </Row>
-          <Row className="min-vh-40">
+
+          <Row className={`min-vh-40 ${styles.project_card}`} >
             <Col md={6} className="d-flex align-items-center justify-content-center">
-              <div className={styles.project_card}>
+              <div>
                 <h3>{t("project1-title")}</h3>
+                <h6>Backend solution</h6>
                 <p>
                   {t("project1-description")}
                 </p>
               </div>
             </Col>
             <Col md={6} className="d-flex align-items-center justify-content-center">
-              <img className="img-fluid" src="/img/running.jpg" />
+              <img className="img-fluid" src="/img/projects/backend.png" />
             </Col>
           </Row>
-          <Row className="min-vh-40">
+
+          <Row className={`min-vh-40 ${styles.project_card}`} >
             <Col md={6} className="d-flex align-items-center justify-content-center">
-              <div className={styles.project_card}>
+              <div>
                 <h3>{t("project2-title")}</h3>
+                <h6>www.lighthousemuseum.ru</h6>
                 <p>
                   {t("project2-description")}
                 </p>
               </div>
             </Col>
             <Col md={6} className="d-flex align-items-center justify-content-center">
-              <img className="img-fluid" src="/img/running.jpg" />
+              <img className="img-fluid" src="/img/projects/lhm.png" />
             </Col>
           </Row>
-          <Row className="min-vh-40">
+
+          <Row className={`min-vh-40 ${styles.project_card}`} >
             <Col md={6} className="d-flex align-items-center justify-content-center">
-              <div className={styles.project_card}>
+              <div>
                 <h3>{t("project3-title")}</h3>
+                <h6>www.vodahimki.ru</h6>
                 <p>
                   {t("project3-description")}
                 </p>
               </div>
             </Col>
             <Col md={6} className="d-flex align-items-center justify-content-center">
-              <img className="img-fluid" src="/img/running.jpg" />
+              <img className="img-fluid" src="/img/projects/himki.png" />
+            </Col>
+          </Row>
+
+          <Row className={`min-vh-40 ${styles.project_card}`} >
+            <Col md={6} className="d-flex align-items-center justify-content-center">
+              <div>
+                <h3>{t("project4-title")}</h3>
+                <h6>www.vodadolgoprudny.ru</h6>
+                <p>
+                  {t("project4-description")}
+                </p>
+              </div>
+            </Col>
+            <Col md={6} className="d-flex align-items-center justify-content-center">
+              <img className="img-fluid" src="/img/projects/dolgo.png" />
             </Col>
           </Row>
         </Container>
