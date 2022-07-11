@@ -5,16 +5,18 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav " />
-        <Navbar.Collapse id="basic-navbar-nav justify-content-between">
+        <Navbar.Toggle aria-controls="basic-navbar-nav my-5" />
+        <Navbar.Collapse id="basic-navbar-nav justify-content-between my-5">
           <Nav className="me-auto d-flex align-items-center ">
             <Nav.Link href="/">{t("menu-home")}</Nav.Link>
             <Nav.Link href="#about-me">{t("menu-aboutme")}</Nav.Link>
             <Nav.Link href="#projects">{t("menu-projects")}</Nav.Link>
+            <Nav.Link href="#skills">{t("menu-skills")}</Nav.Link>
+            <Nav.Link href="#contact">{t("menu-contact")}</Nav.Link>
 
             <NavDropdown
               className="d-lg-none"

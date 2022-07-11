@@ -4,7 +4,19 @@ import "../styles/globals.scss";
 import { appWithI18Next } from "ni18n";
 import { ni18nConfig } from "../src/localization/config";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const MyApp = ({ Component, pageProps }) => {
+  useEffect(() => {
+    AOS.init({
+      // easing: "ease-out-cubic",
+      // once: true,
+      offset: 50,
+    });
+  }, []);
+
   return <Component {...pageProps} />;
 };
 

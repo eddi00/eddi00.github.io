@@ -1,3 +1,35 @@
 .hero {
   // height: 80vh;
 }
+
+.aboutme_card {
+  background-color: #e0cffc;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 10px;
+  font-size: 20px;
+  // color: #140330;
+  color: black;
+
+  // p {
+  //   background-color: #e0cffc;
+  //   padding: 2rem;
+    
+  //   border-radius: 16px;
+  // }
+}
+
+.project_card {
+  background-color: #ddd;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 10px;
+  // color: #140330;
+  color: black;
+
+  p {
+    font-size: 16px;
+  }
+}
