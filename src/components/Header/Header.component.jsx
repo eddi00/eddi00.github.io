@@ -27,9 +27,9 @@ const Header = () => {
               <NavDropdown.Item href="/es">Español</NavDropdown.Item>
               <NavDropdown.Item href="/ru">Русский</NavDropdown.Item> */}
             {/* </NavDropdown> */}
-            <Nav.Link href="/en">English</Nav.Link>
-              <Nav.Link href="/es">Español</Nav.Link>
-              <Nav.Link href="/ru">Русский</Nav.Link>
+              <Nav.Link href="/en" className="d-block d-sm-none">English</Nav.Link>
+              <Nav.Link href="/es" className="d-block d-sm-none">Español</Nav.Link>
+              <Nav.Link href="/ru" className="d-block d-sm-none">Русский</Nav.Link>
           </Nav>
           <div className="d-none d-lg-block">
             <NavDropdown className="" title="Language" id="basic-nav-dropdown">

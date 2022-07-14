@@ -71,8 +71,8 @@ export default function Home() {
             </Col>
           </Row>
           <Row className="min-vh-70">
-            <Col md={6} className="d-flex align-items-center justify-content-center ">
-              <img data-aos="fade-right" className="img-fluid d-none" src="/img/running.jpg" />
+            <Col md={6} className="d-flex align-items-center justify-content-center d-none d-sm-block">
+              <img data-aos="fade-right" className="img-fluid " src="/img/running.jpg" />
             </Col>
             <Col md={6} className="d-flex align-items-center justify-content-center">
             <div className={styles.aboutme_card}>
