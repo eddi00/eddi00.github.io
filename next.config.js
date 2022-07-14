@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   reactStrictMode: true,
@@ -8,4 +8,7 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  nextConfig,
+  assetPrefix: isProd ? '/your-github-repo-name/' : ''
+};
