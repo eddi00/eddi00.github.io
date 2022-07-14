@@ -32,7 +32,7 @@ export default function Home() {
 
       <main id="home">
         <div  className="bg-light">
-          <Container className="">
+          <Container className="mt-5">
             <Row>
               <Col
                 md={6}
