@@ -30,9 +30,9 @@ export default function Home() {
         <Header />
       </header>
 
-      <main>
+      <main id="home">
         <div  className="bg-light">
-          <Container className="mb-5">
+          <Container className="">
             <Row>
               <Col
                 md={6}
@@ -58,7 +58,7 @@ export default function Home() {
 
         <Container id="about-me">
           <Row className="text-center">
-            <h2 className="mt-5">{t("about-me-title")}</h2>
+            <h2 className="mt-5 pt-5">{t("about-me-title")}</h2>
           </Row>
           <Row className="min-vh-60">
             <Col md={6} className="d-flex align-items-center justify-content-center">
@@ -70,9 +70,9 @@ export default function Home() {
               <img data-aos="fade-left" className=" img-fluid" src="/img/aboutme.png" />
             </Col>
           </Row>
-          <Row className="min-vh-80">
-            <Col md={6} className="d-flex align-items-center justify-content-center">
-              <img data-aos="fade-right" className="img-fluid" src="/img/running.jpg" />
+          <Row className="min-vh-70">
+            <Col md={6} className="d-flex align-items-center justify-content-center ">
+              <img data-aos="fade-right" className="img-fluid d-none" src="/img/running.jpg" />
             </Col>
             <Col md={6} className="d-flex align-items-center justify-content-center">
             <div className={styles.aboutme_card}>
@@ -84,8 +84,8 @@ export default function Home() {
         </Container>
 
         <Container id="projects">
-          <Row className="text-center mb-5">
-            <h2 className="mb-2 mt-5">{t("projects-title")}</h2>
+          <Row className="text-center mb-5 ">
+            <h2 className="mb-2 mt-5 pt-4">{t("projects-title")}</h2>
           </Row>
 
           <Row className={`min-vh-40 ${styles.project_card}`} >
@@ -173,14 +173,14 @@ export default function Home() {
             </Col>
           </Row>
 
-          <Row className="vh-10">
+          {/* <Row className="vh-10">
            <br />
-          </Row>
+          </Row> */}
         </Container>
 
         <Container className="min-vh-90" id="skills">
           <Row className="text-center">
-            <h2 className="mb-2 mt-5">{t("skills-title")}</h2>
+            <h2 className="mb-2 mt-5 pt-4">{t("skills-title")}</h2>
             {/* <h6 className="c-grey-300">{t("projects-subtitle")}</h6> */}
           </Row>
           

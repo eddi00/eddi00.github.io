@@ -18,6 +18,12 @@
     
   //   border-radius: 16px;
   // }
+
+  @media (max-width: 576px) {
+
+    font-size: 16px;
+    padding: 2rem;
+  }
 }
 
 .project_card {
@@ -35,5 +41,11 @@
 
   h6 {
     color: gray;
+  }
+
+  @media (max-width: 576px) {
+
+    padding: 2rem 1rem;
+    margin: 1rem 0.5rem;
   }
 }
