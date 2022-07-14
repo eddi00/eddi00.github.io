@@ -14,6 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
       // easing: "ease-out-cubic",
       // once: true,
       offset: 50,
+      delay: 300
     });
   }, []);
 

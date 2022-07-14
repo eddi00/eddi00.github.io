@@ -7,10 +7,12 @@ import { useTranslation } from "react-i18next";
 import { Col, Container, Row } from "react-bootstrap";
 
 import { IoMdHeart } from "react-icons/io";
+import { MdEmail } from "react-icons/md"
 import Link from "next/link";
 import Header from "../src/components/Header/Header.component";
 import HeroAnimation from "../src/components/HeroAnimation/HeroAnimation.component";
 import { loadTranslations } from "ni18n";
+import SkillCards from "../src/components/SkillCards/SkillCards.component";
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -31,27 +33,29 @@ export default function Home() {
       </header>
 
       <main>
-        <Container className="mb-5">
-          <Row>
-            <Col
-              md={6}
-              className="d-flex  align-items-center min-vh-70"
-            >
-              <div className="p-2">
-                <h1>{t("hero-title1")}</h1>
-                <h1>{t("hero-title2")}</h1>
-                <h5 className="w-75 mt-2">{t("hero-subtitle")}</h5>
-              </div>
-            </Col>
-            <Col
-              md={6}
-              className="min-vh-70"
-              
-            >
-              <HeroAnimation />
-            </Col>
-          </Row>
-        </Container>
+        <div  className="bg-light">
+          <Container className="mb-5">
+            <Row>
+              <Col
+                md={6}
+                className="d-flex  align-items-center min-vh-70"
+              >
+                <div className="p-2">
+                  <h1>{t("hero-title1")}</h1>
+                  <h1>{t("hero-title2")}</h1>
+                  <h5 className="w-75 mt-2">{t("hero-subtitle")}</h5>
+                </div>
+              </Col>
+              <Col
+                md={6}
+                className="min-vh-70"
+                
+              >
+                <HeroAnimation />
+              </Col>
+            </Row>
+          </Container>
+        </div>
 
 
         <Container className="min-vh-100" id="about-me">
@@ -68,7 +72,7 @@ export default function Home() {
               <img data-aos="fade-left" className=" img-fluid" src="/img/aboutme.png" />
             </Col>
           </Row>
-          <Row className="min-vh-60">
+          <Row className="min-vh-80">
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <img data-aos="fade-right" className="img-fluid" src="/img/running.jpg" />
             </Col>
@@ -153,22 +157,45 @@ export default function Home() {
               <img className="img-fluid" src="/img/projects/dolgo.png" />
             </Col>
           </Row>
+
+          <Row className={`min-vh-40 ${styles.project_card}`} >
+            <Col md={6} className="d-flex align-items-center justify-content-center">
+              <div>
+                <h3>{t("project5-title")}</h3>
+                <h6>www.vodadolgoprudny.ru</h6>
+                <p>
+                  {t("project5-description")}
+                </p>
+              </div>
+            </Col>
+            <Col md={6} className="d-flex align-items-center justify-content-center">
+              <img className="img-fluid" src="/img/projects/e-commerce.png" />
+            </Col>
+          </Row>
+
+          <Row className="vh-10">
+           <br />
+          </Row>
         </Container>
 
-        <Container className="min-vh-100" id="skills">
+        <Container className="min-vh-90" id="skills">
           <Row className="text-center">
             <h2 className="mb-2 mt-5">{t("skills-title")}</h2>
             {/* <h6 className="c-grey-300">{t("projects-subtitle")}</h6> */}
           </Row>
+          
+          <SkillCards />
+          
         </Container>
 
-        <Container id="contact">
+        <Container id="contact" className="min-vh-50">
           <Row className="text-center mt-5">
-            <h2 className="mb-2">{t("contact-me-title")}
+            <h2 className="mb-4 ">{t("contact-me-title")}
             </h2>
           </Row>
           <Row>
-            <p className="my-3">{t("contact-me-text")} 
+            <MdEmail size={30} />
+            <p className="my-3 text-center">{t("contact-me-text")} 
               <a href="mailto: eduard.beliaev@gmail.com">eduard.beliaev@gmail.com</a>
             </p>
           </Row>
