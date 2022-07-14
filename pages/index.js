@@ -209,7 +209,7 @@ export default function Home() {
             <Col className="text-light text-center my-3">
               {t("below-footer-p1")} <IoMdHeart color="red" />{" "}
               {t("below-footer-p2")}{" "}
-              <a href="http://www.nextjs.org/" target="_blank">
+              <a href="http://www.nextjs.org/" target="_blank" rel="noreferrer">
                 NextJS
               </a>
             </Col>
