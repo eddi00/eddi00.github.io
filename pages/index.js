@@ -8,7 +8,6 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import { IoMdHeart } from "react-icons/io";
 import { MdEmail } from "react-icons/md"
-import Link from "next/link";
 import Header from "../src/components/Header/Header.component";
 import HeroAnimation from "../src/components/HeroAnimation/HeroAnimation.component";
 import { loadTranslations } from "ni18n";
@@ -58,7 +57,7 @@ export default function Home() {
         </div>
 
 
-        <Container className="min-vh-100" id="about-me">
+        <Container id="about-me">
           <Row className="text-center">
             <h2 className="mt-5">{t("about-me-title")}</h2>
           </Row>
@@ -82,20 +81,12 @@ export default function Home() {
               </div>
             </Col>
           </Row>
-          {/* <Row className="vh-10"></Row> */}
 
         </Container>
 
-        {/* <Container >
-          <Row className="vh-10">
-           <br />
-          </Row>
-        </Container> */}
-
-        <Container className="min-vh-100" id="projects">
+        <Container id="projects">
           <Row className="text-center mb-5">
             <h2 className="mb-2 mt-5">{t("projects-title")}</h2>
-            {/* <h6 className="c-grey-300">{t("projects-subtitle")}</h6> */}
           </Row>
 
           <Row className={`min-vh-40 ${styles.project_card}`} >
@@ -117,7 +108,9 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project2-title")}</h3>
-                <h6>www.lighthousemuseum.ru</h6>
+                <a target="_blank" href="https://www.lighthousemuseum.ru">
+                  <h6>www.lighthousemuseum.ru</h6>
+                </a>
                 <p>
                   {t("project2-description")}
                 </p>
@@ -132,7 +125,9 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project3-title")}</h3>
-                <h6>www.vodahimki.ru</h6>
+                <a target="_blank" href="https://www.vodahimki.ru">
+                  <h6>www.vodahimki.ru</h6>
+                </a>
                 <p>
                   {t("project3-description")}
                 </p>
@@ -147,7 +142,10 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project4-title")}</h3>
-                <h6>www.vodadolgoprudny.ru</h6>
+                <a target="_blank" href="https://www.vodadolgoprudny.ru">
+
+                  <h6>www.vodadolgoprudny.ru</h6>
+                </a>
                 <p>
                   {t("project4-description")}
                 </p>
@@ -162,7 +160,10 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project5-title")}</h3>
-                <h6>www.vodadolgoprudny.ru</h6>
+                <a target="_blank" href="https://brubeck-nextjs-wordpress.vercel.app/">
+
+                  <h6>https://brubeck-nextjs-wordpress.vercel.app/</h6>
+                </a>
                 <p>
                   {t("project5-description")}
                 </p>
