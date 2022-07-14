@@ -23,16 +23,16 @@ const Header = () => {
               title="Language"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1">EN</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">ES</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">RU</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Español</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Русский</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <div className="d-none d-lg-block">
             <NavDropdown className="" title="Language" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/en">EN</NavDropdown.Item>
-              <NavDropdown.Item href="/es">ES</NavDropdown.Item>
-              <NavDropdown.Item href="/ru">RU</NavDropdown.Item>
+              <NavDropdown.Item href="/en">English</NavDropdown.Item>
+              <NavDropdown.Item href="/es">Español</NavDropdown.Item>
+              <NavDropdown.Item href="/ru">Русский</NavDropdown.Item>
             </NavDropdown>
           </div>
         </Navbar.Collapse>

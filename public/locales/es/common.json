@@ -1,4 +1,39 @@
 {
-  "home": "Casa",
-  "page2": "Página 2"
+  "menu-home": "Home",
+  "menu-aboutme": "Acerca de mí",
+  "menu-projects": "Proyectos",
+  "menu-skills": "Conocimientos",
+  "menu-contact": "Contacto",
+
+  "hero-title1": "Hola, soy Eduard.",
+  "hero-title2": "Desarrollador Fullstack.",
+  "hero-subtitle": "Me especializo en soluciones IT personalizadas.",
+  
+
+  "about-me-title": "Acerca de mí",
+  "about-me-section1-text": "Soy un joven desarrollador web Fullstack que se especializa en soluciones personalizadas. Ya sea que se trate de un sitio de comercio electrónico, un simple sitio o una solución back-end, siempre encontraré la manera de satisfacer las necesidades de mis clientes.",
+  "about-me-section2-text": "Correr preguntando a todos por qué algo no funciona no es lo que quieres. Conmigo tienes la espalda cubierta para que puedas hacer otras tareas importantes. Me preocupo por tu negocio.",
+
+  "projects-title": "Proyectos en los que he trabajado",
+
+  "project1-title": "RetailCRM",
+  "project1-description": "La idea detrás de este proyecto era reducir el tiempo que el equipo de ventas perdía procesando cada pedido. Así que mi solución fue crear dos programas. El primero es una aplicación que vigila la base de datos y la segunda es una API REST que hace diferentes tareas que los triggers de RetailCRM no pueden hacer.",
+  "project2-title": "Light House Museum",
+  "project2-description": "Un sitio de reservas de boletos impulsado por Wordpress creado para un museo ubicado en San Petersburgo. El tablero de WP también tiene un programa de administración de tickets.",
+  "project3-title": "Himki Water plant",
+  "project3-description": "Un sitio basado en ReactJs que tiene la capacidad de pedir botellas de agua a través de un formulario.",
+  "project4-title": "Dolgoprudny Water plant",
+  "project4-description": "Otro sitio basado en ReactJs que tiene la capacidad de pedir botellas de agua a través de un formulario.",
+  "project5-title": "E-Commerce template",
+  "project5-description": "Una plantilla de NextJs utilizada para futuros proyectos de comercio electrónico. Dispone de filtro avanzado de productos, autenticación de usuarios y la tienda se gestiona desde un headless WP/WooCommerce.",
+
+  "skills-title": "Conocimientos técnicos",
+
+
+  "contact-me-title": "Contacto",
+  "contact-me-text": "Puedes comunicarte conmigo mandando un email a ",
+
+  "below-footer-p1": "Hecho con ",
+  "below-footer-p2": "con"
+
 }
