@@ -108,7 +108,7 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project2-title")}</h3>
-                <a target="_blank" href="https://www.lighthousemuseum.ru">
+                <a target="_blank" href="https://www.lighthousemuseum.ru" rel="noreferrer">
                   <h6>www.lighthousemuseum.ru</h6>
                 </a>
                 <p>
@@ -125,7 +125,7 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project3-title")}</h3>
-                <a target="_blank" href="https://www.vodahimki.ru">
+                <a target="_blank" href="https://www.vodahimki.ru" rel="noreferrer">
                   <h6>www.vodahimki.ru</h6>
                 </a>
                 <p>
@@ -142,7 +142,7 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project4-title")}</h3>
-                <a target="_blank" href="https://www.vodadolgoprudny.ru">
+                <a target="_blank" href="https://www.vodadolgoprudny.ru" rel="noreferrer">
 
                   <h6>www.vodadolgoprudny.ru</h6>
                 </a>
@@ -160,7 +160,7 @@ export default function Home() {
             <Col md={6} className="d-flex align-items-center justify-content-center">
               <div>
                 <h3>{t("project5-title")}</h3>
-                <a target="_blank" href="https://brubeck-nextjs-wordpress.vercel.app/">
+                <a target="_blank" href="https://brubeck-nextjs-wordpress.vercel.app/" rel="noreferrer">
 
                   <h6>https://brubeck-nextjs-wordpress.vercel.app/</h6>
                 </a>
