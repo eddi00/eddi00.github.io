@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { ni18nConfig } from "../src/localization/config";
-import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 import { useTranslation } from "react-i18next";

@@ -8,7 +8,4 @@ const nextConfig = {
   },
 };
 
-module.exports = {
-  nextConfig,
-  assetPrefix: isProd ? '/your-github-repo-name/' : ''
-};
+module.exports = nextConfig;
