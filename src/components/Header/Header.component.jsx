@@ -18,18 +18,9 @@ const Header = () => {
             <Nav.Link href="#skills">{t("menu-skills")}</Nav.Link>
             <Nav.Link href="#contact">{t("menu-contact")}</Nav.Link>
 
-            {/* <NavDropdown
-              className="d-lg-none"
-              title="Language"
-              id="basic-nav-dropdown"
-            > */}
-              {/* <NavDropdown.Item href="/en">English</NavDropdown.Item>
-              <NavDropdown.Item href="/es">Español</NavDropdown.Item>
-              <NavDropdown.Item href="/ru">Русский</NavDropdown.Item> */}
-            {/* </NavDropdown> */}
-              <Nav.Link href="/en" className="d-block d-lg-none">English</Nav.Link>
-              <Nav.Link href="/es" className="d-block d-lg-none">Español</Nav.Link>
-              <Nav.Link href="/ru" className="d-block d-lg-none">Русский</Nav.Link>
+            <Nav.Link href="/en" className="d-block d-lg-none">English</Nav.Link>
+            <Nav.Link href="/es" className="d-block d-lg-none">Español</Nav.Link>
+            <Nav.Link href="/ru" className="d-block d-lg-none">Русский</Nav.Link>
           </Nav>
           <div className="d-none d-lg-block">
             <NavDropdown className="" title="Language" id="basic-nav-dropdown">

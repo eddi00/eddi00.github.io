@@ -8,3 +8,9 @@ a {
 body {
   position: relative !important;
 }
+
+html,
+body{
+  width: 100%;
+  overflow-x:hidden;
+}
